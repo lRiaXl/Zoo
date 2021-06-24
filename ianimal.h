@@ -7,11 +7,15 @@ using namespace std;
 class IAnimal
 {
     string m_name;
+    int m_age;
 
 public:
     IAnimal();
-    IAnimal(string m_name);
+    IAnimal(string m_name, int m_age);
     virtual ~IAnimal();
+    virtual string getName();
+    virtual int getAge();
+    virtual string getInfos();
 
 };
 

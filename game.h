@@ -21,7 +21,8 @@ public:
     
     Game();
     int gameStart();
-    void buyAnimal(Zoo zoo);
+    Zoo buyAnimal(Zoo zoo);
+    // void sellAnimal(Zoo zoo);
 };
 
 #endif // GAME_H

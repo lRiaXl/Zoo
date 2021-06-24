@@ -8,8 +8,22 @@ Aigle::Aigle()
 }
 
 
-Aigle::Aigle(string name)
-    :IAnimal(name)
+Aigle::Aigle(string name, int age)
+    :IAnimal(name, age)
 {
 
+}
+string Aigle::getName()
+{
+
+    return name;
+}
+int Aigle::getAge()
+{
+    return age;
+}
+string Aigle::getInfos()
+{
+    string result = getName() + " " + to_string(getAge());
+    return result;
 }

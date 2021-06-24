@@ -4,6 +4,7 @@
 #include "aigle.h"
 #include "poule.h"
 #include "tigre.h"
+#include "coq.h"
 
 
 #include <vector>
@@ -21,6 +22,7 @@ public:
     Zoo(string name = "");
     string getName();
     void addAnimal(IAnimal* animal);
+    void printAnimals();
 };
 
 #endif // ZOO_H

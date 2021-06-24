@@ -9,10 +9,14 @@ using namespace std;
 
 class Tigre:public IAnimal
 {
-    int tigreCount = 1;
+    string name = "Tigre";
+    int age;
 public:
     Tigre();
-    Tigre(string name);
+    Tigre(string name, int age);
+    string getName();
+    int getAge();
+    string getInfos();
 };
 
 #endif // TIGRE_H

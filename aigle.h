@@ -7,10 +7,14 @@ using namespace std;
 
 class Aigle:public IAnimal
 {
-    int aigleCount = 1;
+    string name = "Aigle";
+    int age;
 public:
     Aigle();
-    Aigle(string name);
+    Aigle(string name, int age);
+    string getName();
+    int getAge();
+    string getInfos();
 };
 
 #endif // AIGLE_H

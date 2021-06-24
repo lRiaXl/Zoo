@@ -14,11 +14,12 @@ using namespace std;
 
 class Money
 {
-    int money = 3000;
+    int money = 20000;
 
 public:
     Money();
-    bool buyAnimal(string animal);
+    bool buyAnimal(int animal, int age);
+    // bool sellAnimal(int animal, int age);
 };
 
 

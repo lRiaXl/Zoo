@@ -11,14 +11,30 @@ int main()
 {
     Zoo zoo("Zoo de la Montagne");
     Game game;
-    int input = game.gameStart();
-    // if (input == 1) {
-    // //     if (money )
-    // // }
-    // cout << money << endl;
+    int temps = 0;
+    zoo.addAnimal(new Tigre("Tigre", 6));
+    zoo.addAnimal(new Tigre("Tigre", 6));
+    zoo.addAnimal(new Tigre("Tigre", 6));
+    zoo.addAnimal(new Tigre("Tigre", 6));
+    zoo.addAnimal(new Aigle("Aigle", 6));
+    zoo.addAnimal(new Aigle("Aigle", 6));
+    zoo.addAnimal(new Aigle("Aigle", 6));
+    zoo.addAnimal(new Aigle("Aigle", 6));
+    while (temps != 120) {
+        int input = game.gameStart();
+        if (input == 1) {
+            zoo = game.buyAnimal(zoo);
+        }
+        if (input == 3) {
+            zoo.printAnimals();
+        }
+        temps++;
+    }
+     
+    // if (input == 2) {
+    //     game.sellAnimal(zoo);
+    // }
 
-    game.buyAnimal(zoo);
-    
 
     return 0;
 }

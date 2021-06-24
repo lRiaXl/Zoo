@@ -17,5 +17,9 @@ void Zoo::addAnimal(IAnimal *animal)
 {
     m_animals.push_back(animal);
 }
-
-
+void Zoo::printAnimals()
+{
+    for (size_t i = 0; i < m_animals.size(); i++) {
+        cout << m_animals[i]->getInfos() << endl;
+    }
+}

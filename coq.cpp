@@ -1,29 +1,28 @@
 #include <iostream>
 #include "ianimal.h"
-#include "poule.h"
-
+#include "coq.h"
 using namespace std;
-
-Poule::Poule()
+Coq::Coq()
 {
 
 }
 
-Poule::Poule(string name, int age)
+
+Coq::Coq(string name, int age)
     :IAnimal(name, age)
 {
 
 }
-string Poule::getName()
+string Coq::getName()
 {
 
     return name;
 }
-int Poule::getAge()
+int Coq::getAge()
 {
     return age;
 }
-string Poule::getInfos()
+string Coq::getInfos()
 {
     string result = getName() + " " + to_string(getAge());
     return result;
